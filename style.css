@@ -14,7 +14,13 @@ body{
 .back{
     background: #ffffff;
     padding: 15px;
+    display: none;
 }
+.bac{
+    background: #ffffff;
+    padding: 15px;
+}
+
 
 div {
     min-height: 50px;
