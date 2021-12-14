@@ -681,13 +681,13 @@ result.onclick = () => {
 }
 
 closeEndMessage.onclick = () => {
-    if (passCloseMessage.value == 46) {
+    if (passCloseMessage.value == 45) {
         endContainer.style.display = "none";
     }
 }
 
 badAnsw.onclick = () => {
-    if (badAnswPass.value == 46) {
+    if (badAnswPass.value == 45) {
         badAnswPass.value = '';
         falsAnsw();
     }
@@ -835,43 +835,43 @@ function checkAnsw() {
     } else {
         qu9.setAttribute('value', "false");
     }
-    console.log(score);
+    // console.log(score);
     if ((qw10Inp[1].checked == true) && (qw10Inp[0].checked == false) && (qw10Inp[2].checked == false) && (qw10Inp[3].checked == false)) {
         score += 1;
     } else {
         qu10.setAttribute('value', "false");
     }
-    console.log(score);
+    // console.log(score);
     if ((qw11Inp[2].checked == true) && (qw11Inp[0].checked == false) && (qw11Inp[1].checked == false) && (qw11Inp[3].checked == false)) {
         score += 1;
     } else {
         qu11.setAttribute('value', "false");
     }
-    console.log(score);
+    // console.log(score);
     if ((qw12Inp[1].checked == true) && (qw12Inp[0].checked == false) && (qw12Inp[2].checked == false) && (qw12Inp[3].checked == false)) {
         score += 1;
     } else {
         qu12.setAttribute('value', "false");
     }
-    console.log(score);
+    // console.log(score);
     if ((qw13Inp[0].checked == true) && (qw13Inp[1].checked == false) && (qw13Inp[2].checked == false) && (qw13Inp[3].checked == false)) {
         score += 1;
     } else {
         qu13.setAttribute('value', "false");
     }
-    console.log(score);
+    // console.log(score);
     if ((qw14Inp[0].checked == true) && (qw14Inp[1].checked == true) && (qw14Inp[2].checked == true) && (qw14Inp[3].checked == false) && (qw14Inp[4].checked == true) && (qw14Inp[5].checked == false) && (qw14Inp[6].checked == true) && (qw14Inp[7].checked == false) && (qw14Inp[8].checked == false)) {
         score += 1;
     } else {
         qu14.setAttribute('value', "false");
     }
-    console.log(score);
+    // console.log(score);
     if ((qw15Inp[1].checked == true) && (qw15Inp[0].checked == false) && (qw15Inp[2].checked == false) && (qw15Inp[3].checked == false)) {
         score += 1;
     } else {
         qu15.setAttribute('value', "false");
     }
-    console.log(score);
+    // console.log(score);
     if ((qw16Inp[0].checked == true) && (qw16Inp[1].checked == false) && (qw16Inp[2].checked == false) && (qw16Inp[3].checked == false)) {
         score += 1;
     } else {
@@ -945,7 +945,7 @@ function checkAnsw() {
     toFio.innerHTML = FIO.value;
     scor.innerHTML = score;
     appraisal.innerHTML = itog;
-    console.log(score);
+    // console.log(score);
 }
 
 function falsAnsw() {
