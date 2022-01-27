@@ -675,29 +675,29 @@ let resDiv = document.querySelector('.resDIV');
 const backElements = document.querySelectorAll('.back');
 
 
-result.onclick = () => {
+result.onclick = function () {
     endContainer.style.display = "block";
     checkAnsw();
 }
 
-closeEndMessage.onclick = () => {
+closeEndMessage.onclick = function () {
     if (passCloseMessage.value == 45) {
         endContainer.style.display = "none";
     }
 }
 
-badAnsw.onclick = () => {
+badAnsw.onclick = function () {
     if (badAnswPass.value == 45) {
         badAnswPass.value = '';
         falsAnsw();
     }
 }
 
-showAppend.onclick = () => {
+showAppend.onclick = function () {
     appendix.classList.toggle('sho');
 }
 
-calcBtn.onclick = () => {
+calcBtn.onclick = function () {
     resAdd.innerHTML = (parseFloat(add[0].value.replace(',', '.')) + parseFloat(add[1].value.replace(',', '.'))).toFixed(2);
     resSub.innerHTML = (parseFloat(sub[0].value.replace(',', '.')) - parseFloat(sub[1].value.replace(',', '.'))).toFixed(2);
     resMul.innerHTML = (parseFloat(mul[0].value.replace(',', '.')) * parseFloat(mul[1].value.replace(',', '.'))).toFixed(2);
@@ -758,14 +758,21 @@ function defferentSeries2(Sc1, Sc3) {
     return [Tc1, Tc3, Tc2, S2];
 }
 
-closeStartMessage.onclick = () => startExam();
+// closeStartMessage.onclick = () => {
+//     console.log('jhabsdhbadsh');
+//     startExam()};
+closeStartMessage.addEventListener('click', function (e) {
+    if (e)  {
+        startExam();
+    }
+})
 FIO.addEventListener('keydown', function(e) {
     if (e.keyCode === 13) {
         startExam();
     }
 })
 
-const startExam = () => {
+const startExam = function () {
     if (FIO.value != 0) {
         container.style.display = "none";
 
