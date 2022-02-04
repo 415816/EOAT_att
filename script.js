@@ -931,28 +931,34 @@ function checkAnsw() {
     if (score > 18) {
         if ((qu7.getAttribute("value") !== "false") || (qu8.getAttribute("value") !== "false")) {
             itog = '"отлично". Оценка может быть выставлена только при наличии письма с фразой "к защите"';
+            endContainer.classList.add('good');
         } else {
             itog = '"неудовлетворительно" (правильное выполнение хотя бы одного из двух последних заданий является необходимым условием для получения положительной оценки, к сожалению, Вы это условие не выполнили). Пересдача по вторникам, время и аудиторию Вы можете уточнить на стенде у 307 аудитории либо в группе ВК: https://vk.com/suti_roat'
+            endContainer.classList.add('bad');
         }
     } else if (score > 15) {
         if ((qu7.getAttribute("value") !== "false") || (qu8.getAttribute("value") !== "false")) {
             itog = '"хорошо". Оценка может быть выставлена только при наличии письма с фразой "к защите"';
+            endContainer.classList.add('good');
         } else {
             itog = '"неудовлетворительно" (правильное выполнение хотя бы одного из двух последних заданий является необходимым условием для получения положительной оценки, к сожалению, Вы это условие не выполнили). Пересдача по вторникам, время и аудиторию Вы можете уточнить на стенде у 307 аудитории либо в группе ВК: https://vk.com/suti_roat'
+            endContainer.classList.add('bad');
         }
     } else if (score > 7) {
         if ((qu7.getAttribute("value") !== "false") || (qu8.getAttribute("value") !== "false")) {
             itog = '"удовлетворительно". Оценка может быть выставлена только при наличии письма с фразой "к защите"';
+            endContainer.classList.add('good');
         } else {
             itog = '"неудовлетворительно" (правильное выполнение хотя бы одного из двух последних заданий является необходимым условием для получения положительной оценки, к сожалению, Вы это условие не выполнили). Пересдача по вторникам, время и аудиторию Вы можете уточнить на стенде у 307 аудитории либо в группе ВК: https://vk.com/suti_roat'
+            endContainer.classList.add('bad');
         }
     } else {
         itog = '"неудовлетворительно". Пересдача по вторникам, время и аудиторию Вы можете уточнить на стенде у 307 аудитории либо в группе ВК: https://vk.com/suti_roat';
+        endContainer.classList.add('bad');
     }
     toFio.innerHTML = FIO.value;
     scor.innerHTML = score;
     appraisal.innerHTML = itog;
-    // console.log(score);
 }
 
 function falsAnsw() {
