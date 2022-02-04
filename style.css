@@ -93,11 +93,11 @@ i{
 }
 
 .endContainer.good{
-    background: rgba(94, 255, 0, 0.98);
+    background: rgba(171, 225, 163, 0.98);
 }
 
 .endContainer.bad{
-     background: rgba(255, 0, 0, 0.98);
+     background: rgba(220, 133, 133, 0.98);
  }
 
 .endMessage{

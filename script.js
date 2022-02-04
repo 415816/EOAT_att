@@ -681,13 +681,13 @@ result.onclick = function () {
 }
 
 closeEndMessage.onclick = function () {
-    if (passCloseMessage.value == 45) {
+    if (passCloseMessage.value == 987) {
         endContainer.style.display = "none";
     }
 }
 
 badAnsw.onclick = function () {
-    if (badAnswPass.value == 45) {
+    if (badAnswPass.value == 987) {
         badAnswPass.value = '';
         falsAnsw();
     }
